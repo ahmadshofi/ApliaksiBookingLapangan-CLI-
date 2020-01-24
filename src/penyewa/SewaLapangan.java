@@ -39,7 +39,9 @@ public class SewaLapangan {
             
             
             String sql ="INSERT INTO `penyewa`(`nama_club`,`no_tlp`)"+"VALUES(?,?);";
+            String sql2 ="INSERT INTO `penyewa`(`nama_club`,`no_tlp`)"+"VALUES(?,?);";
             pStatement=(PreparedStatement) conn.prepareStatement(sql);
+            pStatement=(PreparedStatement) conn.prepareStatement(sql2);
             
             System.out.println("SEWA LAPANGAN FUTSAL");
             System.out.print("Masukkan Nama Club : ");

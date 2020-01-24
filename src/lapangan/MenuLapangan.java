@@ -5,6 +5,8 @@
  */
 package lapangan;
 
+import apliaksibookinglapangan.cli.ApliaksiBookingLapanganCLI;
+import apliaksibookinglapangan.cli.MenuUtama;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -19,6 +21,7 @@ public class MenuLapangan {
         System.out.println("MENU LAPANGAN");
         System.out.println("1.Input Lapangan");
         System.out.println("2.Hapus Lapangan");
+        System.out.println("3.Kembali Kemenu Pilihan");
         System.out.print("Masukkan Pilihan : ");
         int pilih = s.nextInt();
         
@@ -33,6 +36,10 @@ public class MenuLapangan {
                  HapusLapangan HL = new HapusLapangan();
                  HL.menu();
                 break;
+            case 3 :
+                 MenuUtama MU = new MenuUtama();
+                 MU.main();
+                 break;
         }
     }
     

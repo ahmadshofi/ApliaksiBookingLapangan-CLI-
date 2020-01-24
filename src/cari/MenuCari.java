@@ -5,6 +5,7 @@
  */
 package cari;
 
+import apliaksibookinglapangan.cli.MenuUtama;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -29,6 +30,10 @@ public class MenuCari {
             case 2:
                   CariPenyewa CPP = new CariPenyewa();
                   CPP.main();
+                break;
+            case 3:
+                  MenuUtama MU = new MenuUtama();
+                   MU.main();
                 break;
         }
         

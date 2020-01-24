@@ -5,6 +5,7 @@
  */
 package pegawai;
 
+import apliaksibookinglapangan.cli.MenuUtama;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -18,6 +19,7 @@ public class MenuPegawai {
         System.out.println("MENU PEGAWAI");
         System.out.println("1.Input Pegawai");
         System.out.println("2.Hapus Pegawai");
+        System.out.println("3.Kembali Ke Menu Utama");
         System.out.print("Masukkan Pilihan : ");
         int pilih = s.nextInt();
         
@@ -30,6 +32,11 @@ public class MenuPegawai {
                 HapusPegawai HP = new HapusPegawai();
                 HP.menu();
                 break;
+            case 3 :
+                MenuUtama MU = new MenuUtama();
+                MU.main();
+                break;
+                
         }
         
     }
